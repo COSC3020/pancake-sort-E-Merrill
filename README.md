@@ -29,3 +29,17 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+### Pancake Comparisons
+
+In terms of comparisons of pancakes (number of elements compared,) the asymptotic runtime ($\theta$) of the algorithm is equivalent to:  
+
+$\sum_{k = 1}^n k$  where n is the length of the array. This sum can be simplified using the summation formula $\frac{n*(n+1)}{2}, which ends up simplifying the aymptotic runtime down to $\theta (n^2)$
+
+### Number of flips
+
+Every iteration, the function will flip the array twice, no matter what. It is then a case of how many times these flips will occur. The way it works is by finding the largest element, flipping it to the front, then to the end, then doing it again, but without including the last element of the array, or (n-1). Since this would start at the length of the array, n, the formula is 2n, which has an asymptotic runtime of $\theta (n)$
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+Gage Hepworth helped me figure out what the algorithm should do to sort (flip largest to front, flip to back)
